@@ -1,0 +1,38 @@
+body {
+    background-color: blanchedalmond;
+    padding:0;
+    margin:0;
+
+}
+#tarolo {
+    width:80%;
+    max-width:800px;;
+    background-color: purple
+    margin:auto; /**Oldal közepére*/
+    padding:10px;
+
+}
+
+.tartalom img{
+    border:3px dashed gray;
+    padding:200px;
+    margin:10px;
+   /*Szülőelem, ezen belül helyezzük el az elemeket*/
+   display:grid;
+   grid-template-columns:2fr 1fr 1fr;
+}
+/* Töréspontok elhelyezése*/
+@media only screen and (max-width: 600px) {
+    #tarolo {
+    background-color:brown;
+    font-size:6vw;
+    color:white;
+    height:100vh;
+}
+    .tartalom img{
+        width:100%;
+        max-width:100%;
+    }
+
+
+}
